@@ -1,0 +1,13 @@
+<h1>Game Score</h1>
+<div class="container">
+  <h2>The Grid...</h2>
+  <ul class="horizontal-list">
+    <% @letters.each do |letter| %>
+    <li><strong><%= letter %></strong></li>
+    <% end %>
+  </ul>
+  <p><%= @score %></p>
+</div>
+<div class="btn">
+  <%= link_to "Play again?", 'new' %>
+</div>
